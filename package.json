@@ -30,9 +30,13 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "start": "lerna run start --stream",
+    "run:frontend": "yarn workspace frontend start",
     "run:storybook": "yarn workspace storybook start",
     "run:component": "yarn workspace component start",
+    "build:frontend": "yarn workspace frontend build",
     "build:component": "yarn workspace component pre:build",
+    "build:frontend:component": "concurrently \"yarn pre:build:test\"  \"yarn build:app\" \"yarn  build:component\"",
+    "test:frontend": "yarn workspace frontend test",
     "test:component": "yarn workspace component test",
     "run:library": "concurrently \"yarn run:component\" \"yarn run:storybook\"",
     "add:component": "yarn workspace component add",
