@@ -2,6 +2,10 @@ import React, { PureComponent } from "react";
 import { Row, Col } from "reactstrap";
 export default class Amazon extends PureComponent {
   componentDidMount() {
+    this.mount();
+  }
+
+  mount() {
     const div = document.createElement("div");
     div.id = "amazon-search";
     const script = document.createElement("script");

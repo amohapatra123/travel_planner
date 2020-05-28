@@ -2,14 +2,7 @@
   margin: 0;
   padding: 0;
 }
-h6 {
-  margin-left: 4rem;
-}
+
 #name {
-  font-size: 10rem;
   font-family: "Piedra", cursive;
-  margin-left: 4rem;
-}
-#search {
-  margin-top: 8rem;
 }
