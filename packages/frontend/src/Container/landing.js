@@ -25,10 +25,10 @@ export default class Landing extends PureComponent {
             <h6>Site Under Construction</h6>
           </Col>
           <Col md={{ size: 4 }} id="search">
-            <PaperInput input addon placeholder="SEARCH" />
+            <PaperInput input addon disabled placeholder="SEARCH" />
           </Col>
           <Col md={{ size: 2 }} id="search">
-            <PaperButton text="SEARCH" color="warning" />
+            <PaperButton text="SEARCH" disabled color="warning" />
           </Col>
         </Row>
         <Row>
